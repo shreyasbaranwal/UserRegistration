@@ -3,6 +3,7 @@
 #constants
 VALIDNAMEPATTERN="^[A-Z]{1}[a-z]{2,}$"
 EMAILPATTERN="^[[:alnum:]]+(([._+-]*)[[:alnum:]]+)*@[[:alnum:]]+.[[:alpha:]]{2,4}([.][[:alpha:]]{2,3})*$"
+MOBILEPATTERN="^[+][0-9]{2}[ ][0-9]{10}$"
 
 #function for pattern check
 function patternCheck()
@@ -24,3 +25,6 @@ patternCheck $lastName $VALIDNAMEPATTERN
 
 read -p "Enter Email ID: " email
 patternCheck $email $EMAILPATTERN
+
+read -p "Enter mobile number with country code: " mobno
+patternCheck $mobno $MOBILEPATTERN
