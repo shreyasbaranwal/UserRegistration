@@ -17,3 +17,6 @@ function patternCheck()
 #Function calling and passing parameter
 read -p "Enter first name: " firstName
 patternCheck $firstName $VALIDNAMEPATTERN
+
+read -p "Enter last name: " lastName
+patternCheck $lastName $VALIDNAMEPATTERN
